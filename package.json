@@ -1,0 +1,20 @@
+{
+  "name": "hyperapp-router",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "babel source.js --out-file build.js && webpack build.js bundle.js",
+    "start": "http-server",
+    "watch": "nodemon --watch source.js --exec \"npm run -s build && npm run -s start\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-es2015": "^6.22.0",
+    "http-server": "^0.9.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
+  }
+}
